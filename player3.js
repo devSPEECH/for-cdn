@@ -5166,7 +5166,7 @@ if (typeof already_executed === 'undefined') {
       };
 
       setPlayHead = e => {
-	if (instance.myPlayer.paused === false) {
+	if (this.myPlayer.paused === false) {
 
         
 	const target = e.target ? e.target : e.srcElement;
@@ -5220,7 +5220,6 @@ if (typeof already_executed === 'undefined') {
 
         (async (instance) => {
 
-			if (instance.myPlayer.paused === true) {
             instance.currentTime = await instance.myPlayer.getTime();
 
             if (instance.highlightedText === true) {
@@ -5231,7 +5230,6 @@ if (typeof already_executed === 'undefined') {
             // no need to check status if the currentTime hasn't changed
             
             instance.checkStatus();  
-          }
 
         })(this);
       }
