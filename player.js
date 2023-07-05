@@ -5214,16 +5214,18 @@ if (typeof already_executed === 'undefined') {
         this.clearTimer();
 
         (async (instance) => {
-          instance.currentTime = await instance.myPlayer.getTime();
+          if (instance.myPlayer.paused === true) {
+            instance.currentTime = await instance.myPlayer.getTime();
 
-          if (instance.highlightedText === true) {
-            instance.currentTime = instance.start;
-            instance.myPlayer.setTime(instance.currentTime);
-            instance.highlightedText = false;
+            if (instance.highlightedText === true) {
+              instance.currentTime = instance.start;
+              instance.myPlayer.setTime(instance.currentTime);
+              instance.highlightedText = false;
+            }
+            // no need to check status if the currentTime hasn't changed
+            
+            instance.checkStatus();  
           }
-          // no need to check status if the currentTime hasn't changed
-          
-          instance.checkStatus();
 
         })(this);
       }
