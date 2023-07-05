@@ -5219,8 +5219,8 @@ if (typeof already_executed === 'undefined') {
         this.clearTimer();
 
         (async (instance) => {
-		console.log("updated player.js");
-          if (instance.myPlayer.paused === true) {
+
+			if (instance.myPlayer.paused === true) {
             instance.currentTime = await instance.myPlayer.getTime();
 
             if (instance.highlightedText === true) {
