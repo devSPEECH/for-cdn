@@ -5166,7 +5166,10 @@ if (typeof already_executed === 'undefined') {
       };
 
       setPlayHead = e => {
-        const target = e.target ? e.target : e.srcElement;
+	if (instance.myPlayer.paused === false) {
+
+        
+	const target = e.target ? e.target : e.srcElement;
 
         // cancel highlight playback
         this.highlightedText = false;
@@ -5193,6 +5196,8 @@ if (typeof already_executed === 'undefined') {
             this.myPlayer.play();
           }
         }
+
+	}
       };
 
       clearTimer = () => {
