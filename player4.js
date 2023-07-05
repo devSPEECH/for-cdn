@@ -5474,7 +5474,7 @@ if (typeof already_executed === 'undefined') {
     }
     let minimizedMode = false;
     let autoScroll = true;
-    let doubleClick = true;
+    let doubleClick = false;
     let webMonetization = false;
     let playOnClick = false;
 
