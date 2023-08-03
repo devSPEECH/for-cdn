@@ -4967,7 +4967,7 @@ if (typeof already_executed === 'undefined') {
             const mediaFragment = this.getSelectionMediaFragment();
 
             if (mediaFragment !== '') {
-              //document.location.hash = mediaFragment;
+              document.location.hash = mediaFragment;
             }
           },
           false,
@@ -5037,8 +5037,8 @@ if (typeof already_executed === 'undefined') {
           playHeadEvent = 'dblclick';
         }
 
-        this.transcript.addEventListener(playHeadEvent, this.setPlayHead, false);
-        this.transcript.addEventListener(playHeadEvent, this.checkPlayHead, false);
+        //this.transcript.addEventListener(playHeadEvent, this.setPlayHead, false);
+        //this.transcript.addEventListener(playHeadEvent, this.checkPlayHead, false);
 
         this.start = this.hashArray[0];
 
