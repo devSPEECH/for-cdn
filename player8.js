@@ -4945,8 +4945,7 @@ if (typeof already_executed === 'undefined') {
     class HyperaudioLite {
       constructor(transcriptId, mediaElementId, minimizedMode, autoscroll, doubleClick, webMonetization, playOnClick) {
         this.transcript = document.getElementById(transcriptId);
-        this.init(mediaElementId, minimizedMode, autoscroll, dou
-		  bleClick, webMonetization, playOnClick);
+        this.init(mediaElementId, minimizedMode, autoscroll, doubleClick, webMonetization, playOnClick);
       }
       
       init = (mediaElementId, minimizedMode, autoscroll, doubleClick, webMonetization, playOnClick) => {
