@@ -4945,7 +4945,8 @@ if (typeof already_executed === 'undefined') {
     class HyperaudioLite {
       constructor(transcriptId, mediaElementId, minimizedMode, autoscroll, doubleClick, webMonetization, playOnClick) {
         this.transcript = document.getElementById(transcriptId);
-        this.init(mediaElementId, minimizedMode, autoscroll, doubleClick, webMonetization, playOnClick);
+        this.init(mediaElementId, minimizedMode, autoscroll, dou
+		  bleClick, webMonetization, playOnClick);
       }
       
       init = (mediaElementId, minimizedMode, autoscroll, doubleClick, webMonetization, playOnClick) => {
@@ -4966,7 +4967,7 @@ if (typeof already_executed === 'undefined') {
             const mediaFragment = this.getSelectionMediaFragment();
 
             if (mediaFragment !== '') {
-              document.location.hash = mediaFragment;
+              //document.location.hash = mediaFragment;
             }
           },
           false,
