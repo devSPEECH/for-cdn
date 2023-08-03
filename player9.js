@@ -5159,7 +5159,7 @@ if (typeof already_executed === 'undefined') {
             nodeDuration = 10; // arbitary for now
           }
 
-          fragment = this.transcript.id + '=' + nodeStart + ',' + Math.round((nodeStart + nodeDuration) * 10) / 10;
+          fragment = this.transcript.id //+ '=' + nodeStart + ',' + Math.round((nodeStart + nodeDuration) * 10) / 10;
         }
 
         return fragment;
