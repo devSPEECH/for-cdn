@@ -4978,7 +4978,7 @@ if (typeof already_executed === 'undefined') {
 
         this.autoscroll = autoscroll;
         this.scrollerContainer = this.transcript;
-        this.scrollerOffset = -500;
+        this.scrollerOffset = 0;
         this.scrollerDuration = 800;
         this.scrollerDelay = 0;
 
