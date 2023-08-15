@@ -4979,7 +4979,7 @@ if (typeof already_executed === 'undefined') {
         this.autoscroll = autoscroll;
         this.scrollerContainer = this.transcript;
         this.scrollerOffset = 0;
-        this.scrollerDuration = 200;
+        this.scrollerDuration = 2000;
         this.scrollerDelay = 0;
 
         this.doubleClick = doubleClick;
